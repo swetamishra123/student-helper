@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #76a3dc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: rgb(95, 209, 203);
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/*index body*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ba{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+  background-size: 400% 400%;
+  position: relative;
+  animation: animate 7.5s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: #fff;
+  background: rgba(255,255,255,.2);
+  padding: 20px;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+/*footer*/
+
+
+.spacer {
+    height: 535px;
+    border: solid red 1px
+    
+  }
+  
+  /* Colors and font sizes can be changed, everything else is required for a responsive footer. Links can be added and removed. The spacer above is not needed, it is just simulating space where content would normally go. */
+  
+  .footer {
+      width: 100%;
+      background-color: rgb(35, 55, 107);
+      color: white;
+      display: flex;
+      justify-content: center;
+      font-size: medium;
+  }
+  
+  .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0px;
+      width: 80%;
+      max-width: 1280px;
+  }
+  
+  .footer-logo {
+      display: flex;
+      align-items: center;
+  }
+  
+  .footer-icon {
+      min-width: 100px;
+      min-height: 100px;
+      border-radius: 50%;
+      background-image: url("footer.png");
+      background-size: 100px;
+  }
+  
+  .footer-text {
+      margin: 0px 15px;
+      cursor: default;
+      user-select: none;
+  }
+  
+  .footer-item {
+      color: white;
+      text-decoration: none;
+      margin: 5px 0px;
+      padding: 5px 10px 5px 10px;
+  }
+  
+  .links {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      margin: 20px 0px;
+      border-left: solid white 1px;
+      padding: 0px 50px;
+  }
+  
+  .footer-item:hover {
+      background: rgb(18, 29, 56);
+  }
+  
+  @media (max-width: 770px) {
+      .footer-logo {
+          margin-left: auto;
+          margin-right: auto;
+      }
+  
+      .links {
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          border-right: solid white 1px;
+      }
+  
+  }
+
+  
