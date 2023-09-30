@@ -60,4 +60,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 6. Please ensure your code follows best practices and includes appropriate documentation.
 
 License
-This project is licensed under the [MIT License](MIT License).
+This project is licensed under the 'MIT License'.
