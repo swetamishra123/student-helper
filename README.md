@@ -40,3 +40,24 @@ A versatile website offering a collection of tools and resources for students an
    ```bash
    git clone https://github.com/your-username/student-helper.git
 
+2. Open the project folder in your code editor.
+
+## Usage
+1. Navigate to the specific tool or webpage you want to use.
+2. Follow the on-screen instructions for each tool.
+3. Customize and modify the tools as needed.
+4. Enjoy the convenience of Student's Helper!
+
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your branch to your fork.
+5. Create a pull request to merge your changes into the main project.
+6. Please ensure your code follows best practices and includes appropriate documentation.
+
+License
+This project is licensed under the [MIT License](MIT License).
